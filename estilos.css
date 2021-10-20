@@ -1,0 +1,139 @@
+body{
+    /*background: linear-gradient(to top, #24b7cd, #21bdd4, #1dc3dc, #18c9e3, #12cfeb);*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    align-items: center;
+    text-align: center;
+    /*background-color: #206A5D;*/
+    margin-bottom: 10px;
+    background: rgb(231,231,231);
+    background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+}
+#contenedor{
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 60%;
+    background-color: rgb(164, 212, 164);
+    /*display: block;*/
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 100vh*/
+}
+article{
+    /*background-color: rgb(164, 212, 164);*/
+    width: 50%;
+    height: auto;
+    float: left;
+    display: block;
+    
+}
+.padre {
+    display: flex;
+    align-items: center;
+ }
+aside{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    /*height: 600px;*/
+    float: right;
+    display: block;
+}
+
+#form-registro{
+    /*display: flex;
+    justify-content: center;*/    
+    align-items: center;
+    /*width: 30%;*/
+    background-color: #EFF7E1;
+    /*padding: 10px;*/
+    text-align: center;
+    border: white;
+    border-radius: 10px;
+}
+
+#form-login{
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+    background-color: #EFF7E1;
+    text-align: center;
+    border: white;
+    border-radius: 10px;
+}
+
+#titular_form{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #81B214;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px ;
+}
+#link_login, #link_login a{
+    text-decoration: none;
+    /*width: 90%;
+    background-color: #689399;*/
+    color: #F58634;
+    padding-bottom: 15px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+#btn-registrar{
+    width: 93%;
+    background-color: #FFCC29;
+    /*background-image: linear-gradient(to top, #24b7cd, #21bdd4, #1dc3dc, #18c9e3, #12cfeb);*/
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#btn-submit-form{
+    
+    width: 93%;
+    background-color: #F58634;
+    /*background-image: linear-gradient(to top, #24b7cd, #21bdd4, #1dc3dc, #18c9e3, #12cfeb);*/
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+
+    margin-top: 10px;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    background-color: #216b5e;
+    padding: 10px;
+    border-radius: 30px;
+    display: block;
+    clear: both;
+    /*position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;*/
+}
+footer a{
+    text-decoration: none;
+    color: #FFCC29;
+}
+
+
+@media (max-width: 600px) {
+    .lat_izq{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        /*height: 600px;*/
+        float: left;
+        display: block;
+    }
+}
