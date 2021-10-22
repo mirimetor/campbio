@@ -2,14 +2,8 @@ body{
     /*background: linear-gradient(to top, #24b7cd, #21bdd4, #1dc3dc, #18c9e3, #12cfeb);*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{
-    align-items: center;
-    text-align: center;
-    /*background-color: #206A5D;*/
-    margin-bottom: 10px;
-    background: rgb(231,231,231);
-    background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
-}
+
+
 #contenedor{
     margin: 0 auto;
     margin-top: 10px;
@@ -23,6 +17,18 @@ nav{
     justify-content: center;
     /*min-height: 100vh*/
 }
+/*
+.navbar-collapse {
+    flex-grow: 0;
+}*/
+.navbar-nav a:hover{
+    color: #cf5c0a;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.404);
+
+}
 article{
     /*background-color: rgb(164, 212, 164);*/
     width: 50%;
@@ -31,11 +37,23 @@ article{
     display: block;
     
 }
-.padre {
-    display: flex;
-    align-items: center;
- }
-aside{
+/* FORMULARIO*/
+#titular_form{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #81B214;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px ;
+    font-size: 24px;
+}
+form input{
+    border-radius: 3px;
+    border: none;
+    width: 80%;
+    margin: 5px;
+}
+.formulario1{
     display: flex;
     align-items: center;
     width: 50%;
@@ -59,30 +77,27 @@ aside{
 #form-login{
     margin: 0 auto;
     align-items: center;
-    width: 50%;
+    width: 30%;
     background-color: #EFF7E1;
     text-align: center;
     border: white;
     border-radius: 10px;
-}
-
-#titular_form{
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #81B214;
-    padding: 10px;
-    color: aliceblue;
-    border-radius: 10px 10px 0px 0px ;
-}
-#link_login, #link_login a{
-    text-decoration: none;
-    /*width: 90%;
-    background-color: #689399;*/
-    color: #F58634;
-    padding-bottom: 15px;
-    font-size: 12px;
     font-weight: bold;
+    font-size: 16px;
+}
 
+
+.form_opc{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.link_login, .link_login a{
+    text-decoration: none;
+    color: #F58634;   
+}
+.link_login a:hover, .link_login a:visited {
+    color: #cf5c0a;
 }
 #btn-registrar{
     width: 93%;
@@ -103,7 +118,7 @@ aside{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-footer{
+/*footer{
 
     margin-top: 10px;
     width: 30%;
@@ -116,24 +131,35 @@ footer{
     border-radius: 30px;
     display: block;
     clear: both;
-    /*position: absolute;
+    position: absolute;
     bottom: 0;
-    margin-bottom: 10px;*/
+    margin-bottom: 10px;
 }
 footer a{
     text-decoration: none;
     color: #FFCC29;
 }
+*/
+footer{
+    clear: both;
+    background-color: #81B214;
+}
+footer a{
+    text-decoration: none;
+    color: #81B214;
+}
 
-
-@media (max-width: 600px) {
+@media (max-width: 1015px) {
     .lat_izq{
         display: none;
     }
-    aside{
+    .formulario1{
         width: 100%;
         /*height: 600px;*/
         float: left;
         display: block;
+    }
+    #form-login{
+        width: 80%;        
     }
 }
