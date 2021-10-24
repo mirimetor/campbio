@@ -8,8 +8,8 @@ body{
     margin: 0 auto;
     margin-top: 10px;
     width: 60%;
-    background-color: rgb(164, 212, 164);
-    /*display: block;*/
+    /*background-color: rgb(164, 212, 164);
+    display: block;*/
 }
 nav{
     display: flex;
