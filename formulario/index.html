@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="validar.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div id="banner">
+        <center><img src="imgs/agropecuario.jpg" alt="logo" width=500 height="300"></center>
+        </div>
+    </header>
+    <div >
+        <h1 id="nombre"> Camp-BIO</h1>
+    </div>
+        <form action= "insertar.php" method="POST" id="form-registro" onsubmit="return validar();" >
+            <br><p id="registro"> Registro</p>
+            <br><label for=""  id="user"> Username</label><br>
+            <br><input type="text" id="username" name="username"  required ><br>
+            <br><label for="" id="clave"> Contraseña</label></br>
+            <br><input type="text" id="contrasena" name="contrasena" required><br>
+            <br><label for="" id="preguntaseguridad"> Pregunta de seguridad</label><br>
+            <br><input type="text" id="preguntadeseguridad" name="preguntadeseguridad" required list="listaopciones"><br>
+            <datalist id="listaopciones">
+                <option value="¿Libro favorito?"></option>
+                <option value="¿Fruta favorita?"></option>
+                <option value="¿Color favorito?"></option>
+            </datalist>
+            <br><label for="" id="respuestaseguridad"> Respuesta de seguridad</label></br>
+            <br><input type="text" id="respuestadeseguridad" name="respuestadeseguridad" required><br>
+            <br><input type="submit" value="Registrar" class="btn-enviar" id= "btn-registrar"></input>
+            <br><a href="login.html" id="enlace-login"> Login</a></<br>
+        </form>
+    </body>
+</html>
