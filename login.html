@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-grow-1 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">¿Qué es Campbio?</a>
@@ -29,7 +29,7 @@
                 </ul>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="login.html">Inicia sesión</a>
+                        <a class="nav-link" href="login.html">Inicia sesión</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="registrate.html">Regístrate</a>
@@ -38,9 +38,13 @@
             </div>
         </div>
     </nav>
+    <!-- Header -->
+    <header>
+        <img src="img/slider3.jpg" alt="" class="d-block w-100">        
+    </header>
     <!--Contenedor principal-->
     <section id="contenedor">
-        <form action="" id="form-login" >
+        <form action="" id="form-login" class="w-75" style="font-weight: normal;" >
             <p id="titular_form">Iniciar sesión</p>
             <label for="username" id="">Nombre de usuario</label><br>
             <input type="text" id="username" ><br>
@@ -48,7 +52,7 @@
             <input type="password" id="contrasena" required><br>
 
             <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <button class="btn btn-detalles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                   Ingrese el captcha
                 </button>
               </p>
@@ -59,8 +63,8 @@
                 </div>
               </div>
 
-            <button type="submit" id="btn-submit-form" onclick="login()">Login</button><br>
-            <p id="link_login"><a href="index.html" id="enlace-login">Regresar al inicio</a></p>
+            <button type="submit" class="btn btn-comprar" id="btn-submit-form" onclick="login()">Login</button><br>
+            <p class="form_opc"><a href="index.html" id="enlace-login" class="link_login">Regresar al inicio</a></p>
         </form>
     </section>
 
