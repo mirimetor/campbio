@@ -191,6 +191,7 @@ footer a{
 .catalogo{
     width: 80%;
 }
+
 .sombrear:hover{
     display: block;
     box-shadow: 0px 5px 10px gray;
@@ -229,4 +230,98 @@ footer a{
     font-size: small;
     color: gray;
     text-decoration: none;
+}
+
+/* BOTONES*/
+
+.btn-comprar { 
+color: #ffffff !important; 
+background-color: #F58634 !important; 
+border-color: #F58634 !important; 
+} 
+
+.btn-comprar:hover, 
+.btn-comprar:focus, 
+.btn-comprar:active, 
+.btn-comprar.active, 
+.open .dropdown-toggle.btn-comprar { 
+color: #ffffff !important; 
+background-color: #FC6900 !important; 
+border-color: #F58634 !important; 
+} 
+
+.btn-comprar:active, 
+.btn-comprar.active, 
+.open .dropdown-toggle.btn-comprar { 
+background-image: none; 
+} 
+
+.btn-comprar.disabled, 
+.btn-comprar[disabled], 
+fieldset[disabled] .btn-comprar, 
+.btn-comprar.disabled:hover, 
+.btn-comprar[disabled]:hover, 
+fieldset[disabled] .btn-comprar:hover, 
+.btn-comprar.disabled:focus, 
+.btn-comprar[disabled]:focus, 
+fieldset[disabled] .btn-comprar:focus, 
+.btn-comprar.disabled:active, 
+.btn-comprar[disabled]:active, 
+fieldset[disabled] .btn-comprar:active, 
+.btn-comprar.disabled.active, 
+.btn-comprar[disabled].active, 
+fieldset[disabled] .btn-comprar.active { 
+background-color: #F58634; 
+border-color: #F58634; 
+} 
+
+.btn-comprar .badge { 
+color: #F58634; 
+background-color: #ffffff; 
+}
+
+.btn-detalles { 
+color: #ffffff !important; 
+background-color: #216B5E !important; 
+border-color: #216B5E !important; 
+} 
+
+.btn-detalles:hover, 
+.btn-detalles:focus, 
+.btn-detalles:active, 
+.btn-detalles.active, 
+.open .dropdown-toggle.btn-detalles { 
+color: #ffffff !important; 
+background-color: #2B8A79 !important; 
+border-color: #216B5E !important; 
+} 
+
+.btn-detalles:active, 
+.btn-detalles.active, 
+.open .dropdown-toggle.btn-detalles { 
+background-image: none; 
+} 
+
+.btn-detalles.disabled, 
+.btn-detalles[disabled], 
+fieldset[disabled] .btn-detalles, 
+.btn-detalles.disabled:hover, 
+.btn-detalles[disabled]:hover, 
+fieldset[disabled] .btn-detalles:hover, 
+.btn-detalles.disabled:focus, 
+.btn-detalles[disabled]:focus, 
+fieldset[disabled] .btn-detalles:focus, 
+.btn-detalles.disabled:active, 
+.btn-detalles[disabled]:active, 
+fieldset[disabled] .btn-detalles:active, 
+.btn-detalles.disabled.active, 
+.btn-detalles[disabled].active, 
+fieldset[disabled] .btn-detalles.active { 
+background-color: #216B5E; 
+border-color: #216B5E; 
+} 
+
+.btn-detalles .badge { 
+color: #216B5E; 
+background-color: #ffffff; 
 }
