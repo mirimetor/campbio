@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales de campo | Camp.bio</title>
+    <meta name="description" content="Compra, vende e intercambia frutas y verduras" />
+    <link rel="icon" href="img/campbio_favicon.png" type="image/png" />
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="portada.html"><img src="img/campbio_logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-grow-1 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="portada.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">¿Qué es Campbio?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="market.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tienda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="market_fruver.html">Fruver</a></li>
+                        <li><a class="dropdown-item" href="market_transformados.html">Transformados</a></li>
+                        <li><a class="dropdown-item" href="market_animales.html">Animales</a></li>
+                        <li><a class="dropdown-item" href="market_insumos.html">Insumos</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-sm btn-outline-secondary" type="submit">Buscar</button>
+                    </form>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav justify-content-end">
+                    
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Bienvenido, @usuario
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="miperfil.html">Mi perfil</a></li>
+                        <li><a class="dropdown-item" href="misproductos.html">Mis productos</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
+                    <span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Slider -->
+    <header>
+        <img src="img/header_animales.jpg" alt="" class="d-block w-100">
+    </header>
+    <!--Contenedor principal-->
+    <section id="contenedor" class="row">
+        <!-- Filtros -->
+        <div id="filtros" >
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="portada.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="market.html">Mercado</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Animales</li>
+                </ol>
+              </nav>
+            <h3>Filtros</h3>
+            <hr>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Categorías
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Mamiferos</label>
+                                
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Aves</label>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Peces</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Tipo de compra
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <div class="accordion-body">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                    <label class="form-check-label" for="exampleCheck1">Todas</label>
+                                    
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Venta</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Trueque</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Ubicación
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <div class="accordion-body">
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1" checked>
+                                    <label class="form-check-label" for="exampleCheck1">Todas</label>
+                                    
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Putumayo</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Nariño</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Cauca</label>
+                                </div>
+                                <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Valle del Cauca</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+        </div>
+        <!-- Catalogo -->
+        <div id="catalogo" >
+            <div class="row mb-1" style="border: 0px">
+                <div class="card sombrear" style="width: 18rem;">
+                    <a href="prod_a_000001_vacas-leche.html"><img src="img/animales_prod_res.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <span class="card-text precio">$3'500.000</span><span class=""> x cabeza</span>
+                        <p class="card-text">Vacas de leche <br>
+                            <span class="badge bg-success">¡Intercambiable!</span><br>
+                            <span class="nombre_vendedor"><a href="market_vendedor_carmen-carmelita.html">Por @carmencarmelita</a> </span>
+                        </p>
+                        <button type="button" class="btn btn-comprar" data-id="a1" data-name="Vacas de leche" data-summary="summary 1" data-price="3500000" data-quantity="1" data-image="img/animales_prod_res.jpg">Comprar</button>
+                        <a href="" class="btn btn-detalles" role="button">Detalles</a>
+                    </div>
+                </div>
+                <div class="card sombrear" style="width: 18rem;">
+                    <a href="prod_a_000002_cerdo-cebado-pie.html"><img src="img/animales_prod_cerdo.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <span class="card-text precio">$7.600</span><span class=""> x kg en pie</span>
+                        <p class="card-text">Cerdo cebado en pie<br>
+                            <span class="badge bg-success">¡Intercambiable!</span><br>
+                            <span class="nombre_vendedor"><a href="">Por @vendedor2</a> </span>
+                        </p>
+                        <button type="button" class="btn btn-comprar" data-id="a2" data-name="Cerdo cebado en pie" data-summary="summary 1" data-price="7600" data-quantity="1" data-image="img/animales_prod_cerdo.jpg">Comprar</button>
+                        <a href="" class="btn btn-detalles" role="button">Detalles</a>
+                    </div>
+                </div>
+                <div class="card sombrear" style="width: 18rem;">
+                    <a href="prod_a_000003_gallina-criolla.html"><img src="img/animales_prod_pollo.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <span class="card-text precio">$40.000</span><span class=""> x Kilo</span>
+                        <p class="card-text">Gallina criolla<br>
+                            <span class="badge bg-success">¡Intercambiable!</span><br>
+                            <span class="nombre_vendedor"><a href="">Por @vendedor3</a> </span>
+                        </p>
+                        <button type="button" class="btn btn-comprar" data-id="a3" data-name="Gallina criolla" data-summary="summary 1" data-price="40000" data-quantity="1" data-image="img/animales_prod_pollo.jpg">Comprar</button>
+                        <a href="" class="btn btn-detalles" role="button">Detalles</a>
+                    </div>
+                </div>
+                <div class="card sombrear" style="width: 18rem;">
+                    <a href="prod_a_000004_cabra-lechera.html"><img src="img/animales_prod_cabra.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <span class="card-text precio">$500.000</span><span class=""> x cabeza</span>
+                        <p class="card-text">Cabra lechera<br>
+                            <span class="badge bg-success">¡Intercambiable!</span><br>
+                            <span class="nombre_vendedor"><a href="">Por @vendedor4</a> </span>
+                        </p>
+                        <button type="button" class="btn btn-comprar" data-id="a4" data-name="Cabra lechera" data-summary="summary 1" data-price="500000" data-quantity="1" data-image="img/animales_prod_cabra.jpg">Comprar</button>
+                        <a href="" class="btn btn-detalles" role="button">Detalles</a>
+                    </div>
+                </div>
+                <div class="card sombrear" style="width: 18rem;">
+                    <a href="prod_a_000005_trucha.html"><img src="img/animales_prod_trucha.jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <span class="card-text precio">$16.800</span><span class=""> x Kilo</span>
+                        <p class="card-text">Trucha  <br>
+                            <span class="badge bg-success">¡Intercambiable!</span><br>
+                            <span class="nombre_vendedor"><a href="">Por @vendedor5</a> </span>
+                        </p>
+                        <button type="button" class="btn btn-comprar" data-id="a5" data-name="Trucha" data-summary="summary 1" data-price="16800" data-quantity="1" data-image="img/animales_prod_trucha.jpg">Comprar</button>
+                        <a href="" class="btn btn-detalles" role="button">Detalles</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Modal Nosotros-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nosotros</h5><br>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+              <b>Camp.bio</b> es una iniciativa que busca conectar a todos los productores y transformadores agropecuarios con los consumidores finales, aliados estratégicos y potenciales inversionistas.<br><br>
+              Queremos evocar los inicios de la actividad comercial y que hoy en día es la base de la economía solidaria, <i>el trueque</i>, darles a los usuarios (comprador/vendedor) la posibilidad de hacer transacciones donde el dinero no sea necesariamente el protagonista. <br><br>
+              Al retomar la cultura de intercambio de bienes y servicios que puedan requerir la comunidad agropecuaria incentiva la acción solidaria con el campo modificando su economía y reconciliando los sistemas productivos con la naturaleza al mitigar el impacto ambiental que generan.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center ">
+        <div class="container p-4">
+            <h6>CONTÁCTENOS</h6>
+            <a href=""><img src="img/rrss_fb.png" alt="Síguenos en Facebook"></a> <a href=""><img src="img/rrss_ig.png" alt="Síguenos en Instagram"></a> <a href=""><img src="img/rrss_tw.png" alt="Síguenos en Twitter"></a> <a href=""><img src="img/rrss_in.png" alt="Síguenos en LinkedIn"></a><br>
+            Putumayo, Colombia<br>
+                e-mail: <a href="mailto:contacto@camp.bio">contacto@camp.bio</a> • Celular: <a href="tel:3171234567">+57 317 1234567</a>
+        </div>
+        <div class="text-center p-3" style="background-color:#216b5e; color: white;">
+            © 2021 Camp.bio • Todos los derechos reservados
+        </div>  
+    </footer>
+    <!-- Scripts -->
+    <script src="js/form.js"></script>
+    <script src="js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.mycart.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

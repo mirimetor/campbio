@@ -2,26 +2,32 @@ body{
     /*background: linear-gradient(to top, #24b7cd, #21bdd4, #1dc3dc, #18c9e3, #12cfeb);*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-header{
-    align-items: center;
-    text-align: center;
-    /*background-color: #206A5D;*/
-    margin-bottom: 10px;
-    background: rgb(231,231,231);
-    background: linear-gradient(0deg, rgba(231,231,231,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
-}
+
+
 #contenedor{
     margin: 0 auto;
     margin-top: 10px;
     width: 60%;
-    background-color: rgb(164, 212, 164);
-    /*display: block;*/
+    /*background-color: rgb(164, 212, 164);
+    display: block;*/
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: center;
     /*min-height: 100vh*/
+}
+/*
+.navbar-collapse {
+    flex-grow: 0;
+}*/
+.navbar-nav a:hover{
+    color: #cf5c0a;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.404);
+
 }
 article{
     /*background-color: rgb(164, 212, 164);*/
@@ -31,11 +37,23 @@ article{
     display: block;
     
 }
-.padre {
-    display: flex;
-    align-items: center;
- }
-aside{
+/* FORMULARIO*/
+#titular_form{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #81B214;
+    padding: 10px;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px ;
+    font-size: 24px;
+}
+form input{
+    border-radius: 3px;
+    border: none;
+    width: 80%;
+    margin: 5px;
+}
+.formulario1{
     display: flex;
     align-items: center;
     width: 50%;
@@ -59,30 +77,27 @@ aside{
 #form-login{
     margin: 0 auto;
     align-items: center;
-    width: 50%;
+    width: 30%;
     background-color: #EFF7E1;
     text-align: center;
     border: white;
     border-radius: 10px;
-}
-
-#titular_form{
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #81B214;
-    padding: 10px;
-    color: aliceblue;
-    border-radius: 10px 10px 0px 0px ;
-}
-#link_login, #link_login a{
-    text-decoration: none;
-    /*width: 90%;
-    background-color: #689399;*/
-    color: #F58634;
-    padding-bottom: 15px;
-    font-size: 12px;
     font-weight: bold;
+    font-size: 16px;
+}
 
+
+.form_opc{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.link_login, .link_login a{
+    text-decoration: none;
+    color: #F58634;   
+}
+.link_login a:hover, .link_login a:visited {
+    color: #cf5c0a;
 }
 #btn-registrar{
     width: 93%;
@@ -103,37 +118,242 @@ aside{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-footer{
 
-    margin-top: 10px;
-    width: 30%;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    background-color: #216b5e;
-    padding: 10px;
-    border-radius: 30px;
-    display: block;
+footer{
     clear: both;
-    /*position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;*/
+    background-color: #81B214;
 }
 footer a{
     text-decoration: none;
-    color: #FFCC29;
+    color: #81B214;
 }
 
-
-@media (max-width: 600px) {
+@media (max-width: 1015px) {
     .lat_izq{
         display: none;
     }
-    aside{
+    .formulario1{
         width: 100%;
         /*height: 600px;*/
         float: left;
         display: block;
     }
+    #form-login{
+        width: 80%;        
+    }
+    #filtros{
+        display: none;
+    }
+    #catalogo{
+        width: 100%;
+        float: left;
+    }
+    #lateral_nosotros{
+        display: none;
+    }
+}
+
+/* NOSOTROS*/
+.cont_video {
+    position: relative;
+    height: 0px;
+    width: 100%;   
+    padding-bottom: 56.25%;
+    margin-bottom: 10px;
+}  
+.video {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* PORTADA */
+
+
+/* CARRITO DE COMPRAS */
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+}
+.my-cart-icon{
+    background-image: url(img/campbio_canasta.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+}
+
+/* MARKET */
+
+#filtros{
+    width: 20%;
+    float: left;
+}
+#catalogo{
+    width: 80%;
+    float: left;
+}
+
+.card{
+    margin: 3px;
+}
+.filtros{
+    width: 20%;
+}
+.catalogo{
+    width: 80%;
+}
+
+.sombrear:hover{
+    display: block;
+    box-shadow: 0px 5px 10px gray;
+}
+
+.card-text span{
+    padding-left: 25px;
+    background-image: url(img/campbio_mini.png);
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+.card-text span .badge .bg-secondary{
+    padding-left: 0px;
+    background-image: none;
+}
+
+.btn-info {
+    color: #000;
+    background-color: #083942;
+    border-color: #0dcaf0;
+}
+
+.precio{
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.descripcion{
+    margin: 0;
+}
+.trueque{
+    color: #F58634;
+}
+.nombre_vendedor a{
+    font-size: small;
+    color: gray;
+    text-decoration: none;
+}
+.breadcrumb-item{
+    font-size: small;
+    text-align: left;
+}
+.breadcrumb-item a{
+    text-decoration: none;
+    color: gray !important;
+}
+li .breadcrumb-item .active{
+    text-decoration: none;
+    color: #F58634 !important;
+}
+
+/* BOTONES*/
+
+.btn-comprar { 
+color: #ffffff !important; 
+background-color: #F58634 !important; 
+border-color: #F58634 !important; 
+} 
+
+.btn-comprar:hover, 
+.btn-comprar:focus, 
+.btn-comprar:active, 
+.btn-comprar.active, 
+.open .dropdown-toggle.btn-comprar { 
+color: #ffffff !important; 
+background-color: #FC6900 !important; 
+border-color: #F58634 !important; 
+} 
+
+.btn-comprar:active, 
+.btn-comprar.active, 
+.open .dropdown-toggle.btn-comprar { 
+background-image: none; 
+} 
+
+.btn-comprar.disabled, 
+.btn-comprar[disabled], 
+fieldset[disabled] .btn-comprar, 
+.btn-comprar.disabled:hover, 
+.btn-comprar[disabled]:hover, 
+fieldset[disabled] .btn-comprar:hover, 
+.btn-comprar.disabled:focus, 
+.btn-comprar[disabled]:focus, 
+fieldset[disabled] .btn-comprar:focus, 
+.btn-comprar.disabled:active, 
+.btn-comprar[disabled]:active, 
+fieldset[disabled] .btn-comprar:active, 
+.btn-comprar.disabled.active, 
+.btn-comprar[disabled].active, 
+fieldset[disabled] .btn-comprar.active { 
+background-color: #F58634; 
+border-color: #F58634; 
+} 
+
+.btn-comprar .badge { 
+color: #F58634; 
+background-color: #ffffff; 
+}
+
+.btn-detalles { 
+color: #ffffff !important; 
+background-color: #216B5E !important; 
+border-color: #216B5E !important; 
+} 
+
+.btn-detalles:hover, 
+.btn-detalles:focus, 
+.btn-detalles:active, 
+.btn-detalles.active, 
+.open .dropdown-toggle.btn-detalles { 
+color: #ffffff !important; 
+background-color: #2B8A79 !important; 
+border-color: #216B5E !important; 
+} 
+
+.btn-detalles:active, 
+.btn-detalles.active, 
+.open .dropdown-toggle.btn-detalles { 
+background-image: none; 
+} 
+
+.btn-detalles.disabled, 
+.btn-detalles[disabled], 
+fieldset[disabled] .btn-detalles, 
+.btn-detalles.disabled:hover, 
+.btn-detalles[disabled]:hover, 
+fieldset[disabled] .btn-detalles:hover, 
+.btn-detalles.disabled:focus, 
+.btn-detalles[disabled]:focus, 
+fieldset[disabled] .btn-detalles:focus, 
+.btn-detalles.disabled:active, 
+.btn-detalles[disabled]:active, 
+fieldset[disabled] .btn-detalles:active, 
+.btn-detalles.disabled.active, 
+.btn-detalles[disabled].active, 
+fieldset[disabled] .btn-detalles.active { 
+background-color: #216B5E; 
+border-color: #216B5E; 
+} 
+
+.btn-detalles .badge { 
+color: #216B5E; 
+background-color: #ffffff; 
 }

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicia sesión | Camp.bio</title>
-    <meta name="description" content="¡Bienvenidos a Camp.bio! Ingresa con tu usuario y contraseña para ingresar a nuestro portal" />
+    <title>Regístrate | Camp.bio</title>
+    <meta name="description" content="¡Bienvenidos a Camp.bio! Inicia registrándote para ingresar a nuestro portal" />
     <link rel="icon" href="img/campbio_favicon.png" type="image/png" />
     <link rel="stylesheet" href="estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav flex-grow-1 justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="nosotros.html">¿Qué es Campbio?</a>
@@ -29,10 +29,10 @@
                 </ul>
                 <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Inicia sesión</a>
+                        <a class="nav-link"  href="login.html">Inicia sesión</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="registrate.html">Regístrate</a>
+                        <a class="nav-link active" aria-current="page" href="registrate.html">Regístrate</a>
                     </li>
                 </ul>
             </div>
@@ -40,31 +40,30 @@
     </nav>
     <!-- Header -->
     <header>
-        <img src="img/slider3.jpg" alt="" class="d-block w-100">        
+        <img src="img/slider1.jpg" alt="" class="d-block w-100">        
     </header>
     <!--Contenedor principal-->
     <section id="contenedor">
-        <form action="" id="form-login" class="w-75" style="font-weight: normal;" >
-            <p id="titular_form">Iniciar sesión</p>
-            <label for="username" id="">Nombre de usuario</label><br>
-            <input type="text" id="username" ><br>
-            <label for="contrasena" id="">Contraseña</label><br>
-            <input type="password" id="contrasena" required><br>
-
-            <p>
-                <button class="btn btn-detalles" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Ingrese el captcha
-                </button>
-              </p>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body" style="background-color: transparent;">
-                    <p style="font-style: italic;">¿Qué resultado da el cuarto de tres veces 12000?</p>
-                    <center><input type="text" id="captcha"></center>
-                </div>
-              </div>
-
-            <button type="submit" class="btn btn-comprar" id="btn-submit-form" onclick="login()">Login</button><br>
-            <p class="form_opc"><a href="index.html" id="enlace-login" class="link_login">Regresar al inicio</a></p>
+        <form action="bienvenida.html" id="form-registro" class="formulario">
+            <p id="titular_form"> ¡Regístrate!</p>
+            <label for="username" >Nombre de usuario</label><br>
+            <input type="text" name="" id="username" placeholder="Ingresa tu nombre de usuario"><br>
+            <label for="email" >Correo</label><br>
+            <input type="email" name="" id="email" placeholder="Ingresa tu correo"><br>
+            <label for="contrasena">Contraseña</label><br>
+            <input type="password" name="" id="contrasena" placeholder="Ingresa tu contraseña"><br>
+            <label for="preguntaSeguridad">Pregunta de seguridad<br>
+            <input list="preguntaSeguridad" id="preguntaSeg" placeholder="Selecciona una pregunta de seguridad" size="100"></label><br>
+            <datalist id="preguntaSeguridad">
+                <option value="¿Cuál es su fruta favorita?"></option>
+                <option value="¿Cuál es es su color favorito?"></option>
+                <option value="¿Cuál es el nombre de su mascota?"></option>
+                <option value="¿Ciudad de nacimiento de su padre?"></option>
+            </datalist>
+            <label for="respuesta_seguridad">Respuesta de seguridad</label><br>
+            <input type="text" name="respuestaSeg" id="respuesta_seguridad" placeholder="Ingresa tu respuesta" size="60"><br>
+            <button id="btn-registrar">Registrar</button><br>
+            <p class="form_opc" >¿Ya tienes cuenta? <a href="login.html" id="enlace-login" class="link_login">Ingresa aquí</a> • <a href="" class="link_login"> ¿Olvidaste tu contraseña?</a></p>                
         </form>
     </section>
 
