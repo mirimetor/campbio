@@ -148,7 +148,12 @@ footer a{
         width: 100%;
         float: left;
     }
+    #lateral_nosotros{
+        display: none;
+    }
 }
+
+/* NOSOTROS*/
 
 
 /* PORTADA */
