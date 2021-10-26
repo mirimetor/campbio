@@ -118,28 +118,7 @@ form input{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/*footer{
 
-    margin-top: 10px;
-    width: 30%;
-    align-items: center;
-    text-align: center;
-    color: white;
-    margin: 0 auto;
-    background-color: #216b5e;
-    padding: 10px;
-    border-radius: 30px;
-    display: block;
-    clear: both;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 10px;
-}
-footer a{
-    text-decoration: none;
-    color: #FFCC29;
-}
-*/
 footer{
     clear: both;
     background-color: #81B214;
@@ -162,4 +141,87 @@ footer a{
     #form-login{
         width: 80%;        
     }
+    #filtros{
+        display: none;
+    }
+    #catalogo{
+        width: 100%;
+        float: left;
+    }
+}
+
+
+/* PORTADA */
+
+
+/**/
+.badge-notify{
+    background:red;
+    position:relative;
+    top: -20px;
+    right: 10px;
+}
+.my-cart-icon-affix {
+    position: fixed;
+    z-index: 999;
+}
+
+/* MARKET */
+
+#filtros{
+    width: 20%;
+    float: left;
+}
+#catalogo{
+    width: 80%;
+    float: left;
+}
+
+.card{
+    margin: 3px;
+}
+.filtros{
+    width: 20%;
+}
+.catalogo{
+    width: 80%;
+}
+.sombrear:hover{
+    display: block;
+    box-shadow: 0px 5px 10px gray;
+}
+
+.card-text span{
+    padding-left: 25px;
+    background-image: url(img/campbio_mini.png);
+    background-repeat: no-repeat;
+    background-position: 4px;
+}
+
+.card-text span .badge .bg-secondary{
+    padding-left: 0px;
+    background-image: none;
+}
+
+.btn-info {
+    color: #000;
+    background-color: #083942;
+    border-color: #0dcaf0;
+}
+
+.precio{
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+.descripcion{
+    margin: 0;
+}
+.trueque{
+    color: #F58634;
+}
+.nombre_vendedor a{
+    font-size: small;
+    color: gray;
+    text-decoration: none;
 }
